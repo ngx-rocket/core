@@ -5,7 +5,7 @@
   "repository": "ngx-rocket/core",
   "main": "lib",
   "scripts": {
-    "lint": "eslint *.js",
+    "lint": "eslint lib/*.js",
     "test": "npm run lint",
     "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags"
   },
