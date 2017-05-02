@@ -19,7 +19,7 @@ Then create a new add-on generator like this:
 ```javascript
 'use strict';
 const Generator = require('@ngx-rocket/core');
-module.exports = Generator.make();
+module.exports = Generator.make({ baseDir: __dirname });
 ```
 
-Add some template files in a `templates/` folder and you're done, congratulations on making your first generator! :tada:
+Add some template files in a `templates/` folder and you're done, congratulations on making your first Yeoman generator! :tada:
