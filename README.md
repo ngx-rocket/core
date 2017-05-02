@@ -22,4 +22,6 @@ const Generator = require('@ngx-rocket/core');
 module.exports = Generator.make({ baseDir: __dirname });
 ```
 
-Add some template files in a `templates/` folder and you're done, congratulations on making your first Yeoman generator! :tada:
+Add some template files in a `templates/` folder and you're done.
+ 
+Congratulations on making your first Yeoman generator! :tada:
