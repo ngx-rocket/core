@@ -14,7 +14,7 @@ This generator extends [Yeoman](https://yeoman.io) base generator with all the b
 
 First install the dependency:
 ```bash
-npm install -S @ngx-rocket/core
+npm install --save @ngx-rocket/core
 ```
 
 Then create a new add-on generator like this:
