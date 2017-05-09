@@ -5,7 +5,7 @@
   "repository": "ngx-rocket/core",
   "main": "lib",
   "scripts": {
-    "test": "xo",
+    "test": "eslint lib/*.js",
     "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags"
   },
   "keywords": [
@@ -30,12 +30,13 @@
     "yeoman-generator": "^1.1.0"
   },
   "devDependencies": {
-    "xo": "^0.18.2"
+    "eslint": "^3.19.0",
+    "eslint-config-xo-space": "^0.16.0"
   },
   "engines": {
     "node": ">=6.0.0"
   },
-  "xo": {
-    "space": true
+  "eslintConfig": {
+    "extends": "xo-space/esnext"
   }
 }
