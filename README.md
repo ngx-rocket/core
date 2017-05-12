@@ -6,11 +6,12 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> Core generator for creating ngX Rocket add-ons
+> Core generator for creating ngX-Rocket add-ons
 
 ## Usage
 
-This generator extends [Yeoman](https://yeoman.io) base generator with all the boilerplate needed to create [ngX Rocket add-ons](), and even more.
+This generator extends [Yeoman](https://yeoman.io) base generator with all the boilerplate needed to create
+[ngX-Rocket add-ons](https://github.com/ngx-rocket/addon-example), and even more.
 
 First install the dependency:
 ```bash
