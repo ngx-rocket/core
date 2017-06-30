@@ -175,7 +175,7 @@ conditional/template prefixes like this: `__<conditional-prefix>(<action>)._<fil
 This is the list of currently implemented file actions:
 
 - `merge` (only for JSON files): performs a deep merge of the JSON properties, concatenating arrays with unique values.
-
+- `raw`: disable template processing even if filename starts with an underscore (`_`).
 
 ### Advanced customization
 
