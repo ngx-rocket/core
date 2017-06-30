@@ -226,6 +226,37 @@ with each other.
 See also the full Yeoman [Base generator documentation](http://yeoman.io/generator/Base.html) for the list of
 available properties and methods you can use in your generator.
 
+### Standalone note
+
+If you want your generator to work as a standalone and not only as an ngX-Rocket add-on, you must define the `appName`
+propery, either using an argument option:
+```javascript
+class MyStandaloneGenerator extends Generator {
+  initializing() {
+    this.argument('appName', {
+      desc: 'Name of the app to generate',
+      type: String,
+      required: true
+    });
+  }
+}
+```
+or a prompt:
+```javascript
+module.exports = Generator.make({
+  baseDir: __dirname,
+
+  prompts: [
+    {
+      type: 'input',
+      name: 'appName',
+      message: 'What\'s the name of your app?'
+    }
+  ]
+});
+```
+or both :)
+
 ## API
 
 ### Static methods/properties
