@@ -312,3 +312,7 @@ See [`Generator.sharedProps`](#generatorsharedprops).
 #### `isStandalone` (read-only)
 
 Returns `true` if the generator is running standalone or `false` if it is running as an add-on.
+
+# License
+
+[MIT](LICENSE)
