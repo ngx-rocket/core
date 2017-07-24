@@ -1,3 +1,7 @@
+# 1.2.1
+- Added `pwa` (progressive web app) to default prefixes
+- Fixed folder conditional prefixes
+
 # 1.2.0
 - Added support for multiple file conditions
 - Updated dependencies
