@@ -156,8 +156,10 @@ You can use the [default prefix rules](#generatordefaultprefixrules) and extend 
 These rules match the questions asked by the main generator
 ([generator-ngx-rocket](https://github.com/ngx-rocket/generator-ngx-rocket)):
 
-- `mobile`: the user has chosen to make a *mobile* or *web+mobile* app
-- `web`: the user has chosen to make a *web-only* app
+- `web`: the user has chosen to make a *web* app as one of its targets
+- `cordova`: the user has chosen to make a *mobile* app as one of its targets
+- `electron`: the user has chosen to make a *desktop* app as one of its targets
+- `pwa`: the user has chosen to add progressive web app support
 - `bootstrap`: the user has chosen *Bootstrap* for its UI
 - `ionic`: the user has chosen *Ionic* for its UI
 - `auth`: the user has enabled authentication
