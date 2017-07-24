@@ -150,6 +150,8 @@ There is two ways to conditionally include a file depending of user choices:
   **Example:** `__authentication.myservice.ts` will be copied to `<project-dir>/my-service.ts` only if the user has
   enabled authentication during prompts.
 
+Multiple conditions are also supported using the `+` character: `__<prefix1>+<prefix2>+<prefixN>.<filename>`.
+
 You can use the [default prefix rules](#generatordefaultprefixrules) and extend them if needed.
 These rules match the questions asked by the main generator
 ([generator-ngx-rocket](https://github.com/ngx-rocket/generator-ngx-rocket)):
