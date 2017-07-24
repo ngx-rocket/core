@@ -1,3 +1,6 @@
+# 2.0.0
+- BREAKING CHANGE: Updated default prefixes to match support for multiple targets
+
 # 1.2.1
 - Added `pwa` (progressive web app) to default prefixes
 - Fixed folder conditional prefixes
