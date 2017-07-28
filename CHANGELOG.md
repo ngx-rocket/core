@@ -1,3 +1,6 @@
+# 2.0.1
+- Fixed bug with folder confitional prefixes
+
 # 2.0.0
 - BREAKING CHANGE: Updated default prefixes to match support for multiple targets
 
