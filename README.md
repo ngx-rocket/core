@@ -285,8 +285,10 @@ Gets the default prefix rules.
 The default rules are these:
 ```javascript
 {
-  mobile: props => props.target !== 'web',
-  web: props => props.target !== 'mobile',
+  web: props => props.target.includes('web'),
+  cordova: props => props.target.includes('cordova'),
+  electron: props => props.target.includes('electron'),
+  pwa: props => Boolean(props.pwa),
   bootstrap: props => props.ui === 'bootstrap',
   ionic: props => props.ui === 'ionic',
   auth: props => Boolean(props.auth)
