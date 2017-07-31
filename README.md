@@ -163,6 +163,9 @@ These rules match the questions asked by the main generator
 - `bootstrap`: the user has chosen *Bootstrap* for its UI
 - `ionic`: the user has chosen *Ionic* for its UI
 - `auth`: the user has enabled authentication
+- `ios`: the user has chosen to support iOS for its mobile app
+- `android`: the user has chosen to support Android for its mobile app
+- `windows`: the user has chosen to support Windows (Universal) for its mobile app
 
 #### Action prefix
 
@@ -291,7 +294,10 @@ The default rules are these:
   pwa: props => Boolean(props.pwa),
   bootstrap: props => props.ui === 'bootstrap',
   ionic: props => props.ui === 'ionic',
-  auth: props => Boolean(props.auth)
+  auth: props => Boolean(props.auth),
+  ios: props => props.mobile.includes('ios'),
+  android: props => props.mobile.includes('android'),
+  windows: props => props.mobile.includes('windows')
 };
 ```
 
