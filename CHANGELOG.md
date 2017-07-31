@@ -1,5 +1,9 @@
+# 2.1.0
+- Added mobile platforms default prefixes (related to https://github.com/ngx-rocket/generator-ngx-rocket/issues/78)
+- Fixed documentation
+
 # 2.0.1
-- Fixed bug with folder confitional prefixes
+- Fixed bug with folder conditional prefixes
 
 # 2.0.0
 - BREAKING CHANGE: Updated default prefixes to match support for multiple targets
