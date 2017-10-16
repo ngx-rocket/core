@@ -1,3 +1,9 @@
+# 3.0.0
+- Added default prefix for Angular Material UI
+
+### Breaking change
+- Updated to `yeoman-generator@2` which has some [breaking changes](https://github.com/yeoman/generator/releases/tag/v2.0.0)
+
 # 2.1.0
 - Added mobile platforms default prefixes (related to https://github.com/ngx-rocket/generator-ngx-rocket/issues/78)
 - Fixed documentation
@@ -6,7 +12,8 @@
 - Fixed bug with folder conditional prefixes
 
 # 2.0.0
-- BREAKING CHANGE: Updated default prefixes to match support for multiple targets
+### Breaking change
+- Updated default prefixes to match support for multiple targets
 
 # 1.2.1
 - Added `pwa` (progressive web app) to default prefixes
