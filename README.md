@@ -162,6 +162,7 @@ These rules match the questions asked by the main generator
 - `pwa`: the user has chosen to add progressive web app support
 - `bootstrap`: the user has chosen *Bootstrap* for its UI
 - `ionic`: the user has chosen *Ionic* for its UI
+- `material`: the user has chosen *Angular Material* for its UI
 - `auth`: the user has enabled authentication
 - `ios`: the user has chosen to support iOS for its mobile app
 - `android`: the user has chosen to support Android for its mobile app
