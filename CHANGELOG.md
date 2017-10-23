@@ -1,3 +1,7 @@
+# 3.0.1
+- Fixed bug when both conditional prefixes and action are used
+- Fixed bug when both folder prefix and action are used
+
 # 3.0.0
 - Added default prefix for Angular Material UI
 
