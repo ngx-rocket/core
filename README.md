@@ -20,6 +20,7 @@
     - [Conditional prefix](#conditional-prefix)
     - [Action prefix](#action-prefix)
   - [Advanced customization](#advanced-customization)
+  - [Standalone note](#standalone-note)
 - [API](#api)
   - [Static methods/properties](#static-methodsproperties)
     - [`Generator.make(options)`](#generatormakeoptions)
@@ -28,6 +29,7 @@
   - [Instance properties](#instance-properties)
     - [`sharedProps`](#sharedprops)
     - [`isStandalone` (read-only)](#isstandalone-read-only)
+    - [`packageManager` (read-only)](#packagemanager-read-only)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -325,6 +327,12 @@ See [`Generator.sharedProps`](#generatorsharedprops).
 #### `isStandalone` (read-only)
 
 Returns `true` if the generator is running standalone or `false` if it is running as an add-on.
+
+#### `packageManager` (read-only)
+
+Returns the package manager to use (either `npm` or `yarn`).
+The default value is `npm`, and can be changed either by the `--packageManager` option or the environment variable
+`NGX_PACKAGE_MANAGER`.
 
 # License
 
