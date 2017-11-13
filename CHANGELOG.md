@@ -1,3 +1,6 @@
+# 3.1.0
+- Added support for Yarn (https://github.com/ngx-rocket/generator-ngx-rocket/issues/49)
+
 # 3.0.1
 - Fixed bug when both conditional prefixes and action are used
 - Fixed bug when both folder prefix and action are used
