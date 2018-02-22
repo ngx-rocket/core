@@ -297,6 +297,8 @@ The default rules are these:
   pwa: props => Boolean(props.pwa),
   bootstrap: props => props.ui === 'bootstrap',
   ionic: props => props.ui === 'ionic',
+  raw: props => props.ui === 'raw',
+  universal: props => Boolean(props.universal),
   auth: props => Boolean(props.auth),
   ios: props => props.mobile.includes('ios'),
   android: props => props.mobile.includes('android'),
