@@ -20,6 +20,7 @@
     - [Conditional prefix](#conditional-prefix)
     - [Action prefix](#action-prefix)
   - [Advanced customization](#advanced-customization)
+  - [Generating only tools](#generating-only-tools)
   - [Standalone note](#standalone-note)
 - [API](#api)
   - [Static methods/properties](#static-methodsproperties)
@@ -236,6 +237,23 @@ with each other.
 See also the full Yeoman [Base generator documentation](http://yeoman.io/generator/Base.html) for the list of
 available properties and methods you can use in your generator.
 
+### Generating only tools
+
+As part of the update process or if your users are only interested with generating only the toolchain, you can define
+filters to exclude template files that are not part of the toolchain.
+
+All generators automatically support the `--tools` option that enable the filters.
+
+To define these filters you have 2 possibilities:
+
+- Create a `.toolsignore` in your generator `baseDir` root to exclude files that are not part of the toolchain.
+  It uses the same syntax as a [`.gitignore`](https://git-scm.com/docs/gitignore) file.
+
+- Specify a `toolsFilter` option when [creating your generator instance](#generatormakeoptions). Note that
+  setting this option will remplace any rules that may be defined in a `.toolsignore` file.
+  This option takes either a string or an array of strings, using the same syntax as a
+  [`.gitignore`](https://git-scm.com/docs/gitignore) file.
+
 ### Standalone note
 
 If you want your generator to work as a standalone and not only as an ngX-Rocket add-on, you must define the `appName`
@@ -283,6 +301,8 @@ Creates a new Yeoman generator extending the core ngx-rocket generator.
 - `prompts`: generator prompts, using [Inquirer.js](https://github.com/SBoudrias/Inquirer.js#question) format (optional).
 - `templatesDir`: generator templates directory (optional, default: `'templates'`)
 - `prefixRules`: generator template prefix rules (optional, default: `Generator.defaultPrefixRules()`)
+- `toolsFilter`: file filter patterns to use when toolchain only option is enabled. If not provided, the generator
+  will try to load the `.toolsignore` file inside `baseDir`.
 
 #### `Generator.defaultPrefixRules`
 
