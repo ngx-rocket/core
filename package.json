@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rocket/core",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Core generator for creating ngX-Rocket add-ons",
   "repository": "ngx-rocket/core",
   "main": "lib",
@@ -27,6 +27,7 @@
   "dependencies": {
     "chalk": "^2.3.1",
     "ejs": "^2.5.7",
+    "ignore": "^3.3.7",
     "lodash": "^4.17.5",
     "node-dir": "^0.1.14",
     "yeoman-generator": "^2.0.3"

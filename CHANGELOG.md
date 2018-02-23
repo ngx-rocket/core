@@ -1,3 +1,6 @@
+# 3.2.1
+- Fixed missing `ignore` module
+
 # 3.2.0
 - Added new prefixes: `raw` and `universal` to support new generator features
 - Added `--tools` generator option to filter files using `.toolsignore` or `toolsFilter` option (https://github.com/ngx-rocket/generator-ngx-rocket/issues/144)
