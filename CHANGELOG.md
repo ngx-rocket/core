@@ -1,3 +1,6 @@
+# 3.3.0
+- Added client/server templates support for fullstack generators or add-ons
+
 # 3.2.1
 - Fixed missing `ignore` module
 
