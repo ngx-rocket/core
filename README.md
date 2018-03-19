@@ -239,6 +239,22 @@ with each other.
 See also the full Yeoman [Base generator documentation](http://yeoman.io/generator/Base.html) for the list of
 available properties and methods you can use in your generator.
 
+> Note: be careful when overriding one of the methods already defined in `@ngx-rocket/core` base Generator (`prompting`
+> or `writing`)! To maintain the base behavior along with your additions, you have to manually call the original method
+> using `super.<method>()` in your overridden method, like this:
+
+```javascript
+class ExampleGenerator extends Generator {
+  writing() {
+    // Do your stuff here
+    console.log('Hey there!');
+
+    // Make sure you call the base method to maintain proper behavior!
+    return super.writing();
+  }
+}
+```
+
 ### Generating only tools
 
 As part of the update process or if your users are only interested with generating only the toolchain, you can define
@@ -287,6 +303,22 @@ module.exports = Generator.make({
 ```
 or both :)
 
+### Fullstack mode
+
+By default, an add-on is configured to generate *client* templates, but by setting the `type`
+[option](#object-options-configures-your-generator-instance) you can generate *server* templates or *both client and
+server* templates.
+
+When any add-on generator is either configured as `server` or `fullstack`, the whole project generation switches to
+**fullstack** mode, meaning that the generated output will contain both client and server code.
+
+At any time after the initialization of your generator you can check if fullstack mode is enabled by using the
+`isFullstack()` instance method.
+
+The client and server output folders can be modified by the user or forced by your generator through the environment
+variables `NGX_CLIENT_PATH` and `NGX_SERVER_PATH`. If not modified, `client` and `server` will be used as default
+output folders.
+
 ## API
 
 ### Static methods/properties
@@ -305,6 +337,8 @@ Creates a new Yeoman generator extending the core ngx-rocket generator.
 - `prefixRules`: generator template prefix rules (optional, default: `Generator.defaultPrefixRules()`)
 - `toolsFilter`: file filter patterns to use when toolchain only option is enabled. If not provided, the generator
   will try to load the `.toolsignore` file inside `baseDir`.
+- `type`: generator type, can be `client`, `server` or `fullstack` (optional, default: 'client'). In `fullstack`
+  mode, client and server templates must be separated into `client` and `server` subfolders.
 
 #### `Generator.defaultPrefixRules`
 
@@ -351,6 +385,10 @@ See [`Generator.sharedProps`](#generatorsharedprops).
 #### `isStandalone` (read-only)
 
 Returns `true` if the generator is running standalone or `false` if it is running as an add-on.
+
+#### `isFullstack` (read-only)
+`true` if this or a composed generator has declared to be in `server` or `fullstack` mode or `false` if it is running
+in client only mode.
 
 #### `packageManager` (read-only)
 
