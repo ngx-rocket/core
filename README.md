@@ -239,6 +239,22 @@ with each other.
 See also the full Yeoman [Base generator documentation](http://yeoman.io/generator/Base.html) for the list of
 available properties and methods you can use in your generator.
 
+> Note: be careful when overriding one of the methods already defined in `@ngx-rocket/core` base Generator (`prompting`
+> or `writing`)! To maintain the base behavior along with your additions, you have to manually call the original method
+> using `super.<method>()` in your overridden method, like this:
+
+```javascript
+class ExampleGenerator extends Generator {
+  writing() {
+    // Do your stuff here
+    console.log('Hey there!');
+
+    // Make sure you call the base method to maintain proper behavior!
+    return super.writing();
+  }
+}
+```
+
 ### Generating only tools
 
 As part of the update process or if your users are only interested with generating only the toolchain, you can define
