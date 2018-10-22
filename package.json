@@ -5,8 +5,9 @@
   "repository": "ngx-rocket/core",
   "main": "lib",
   "scripts": {
-    "lint": "eslint lib/*.js",
-    "test": "npm run lint -s && jasmine JASMINE_CONFIG_PATH=./jasmine.json",
+    "lint": "xo",
+    "test": "npm run lint -s && jest",
+    "fix": "xo --fix",
     "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags",
     "toc": "doctoc README.md --title '## Table of Contents' --maxlevel 4"
   },
@@ -34,18 +35,18 @@
   },
   "devDependencies": {
     "doctoc": "^1.3.1",
-    "eslint": "^5.7.0",
-    "eslint-config-xo-space": "^0.20.0",
-    "jasmine": "^3.2.0"
+    "jest": "^23.6.0",
+    "xo": "^0.23.0"
   },
   "engines": {
     "node": ">=6.0.0"
   },
-  "eslintConfig": {
-    "extends": "xo-space/esnext",
-    "env": {
-      "node": true,
-      "jasmine": true
-    }
-  }
+  "xo": {
+    "space": true,
+    "prettier": true,
+    "envs": [
+      "node",
+      "jest"
+    ]
+	}
 }
