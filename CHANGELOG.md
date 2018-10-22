@@ -1,3 +1,12 @@
+# 4.0.0
+- Updated dependencies and fixed vulnerabilities
+- Fixed documentation TOC
+- Migrated from Jasmine to Jest for unit tests
+- Migrated from ESlint to xo + prettier for linting and formatting
+
+### Breaking change
+- Updated to `yeoman-generator@3` which has some [breaking changes](https://github.com/yeoman/generator/releases/tag/v3.0.0)
+
 # 3.2.1
 - Fixed missing `ignore` module
 
