@@ -22,6 +22,7 @@
   - [Advanced customization](#advanced-customization)
   - [Generating only tools](#generating-only-tools)
   - [Standalone note](#standalone-note)
+  - [Fullstack mode](#fullstack-mode)
 - [API](#api)
   - [Static methods/properties](#static-methodsproperties)
     - [`Generator.make(options)`](#generatormakeoptions)
@@ -30,6 +31,7 @@
   - [Instance properties](#instance-properties)
     - [`sharedProps`](#sharedprops)
     - [`isStandalone` (read-only)](#isstandalone-read-only)
+    - [`isFullstack` (read-only)](#isfullstack-read-only)
     - [`packageManager` (read-only)](#packagemanager-read-only)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
