@@ -1,3 +1,6 @@
+# 4.0.1
+- Fixed issue when matching action prefix
+
 # 4.0.0
 - Updated dependencies and fixed vulnerabilities
 - Fixed documentation TOC
