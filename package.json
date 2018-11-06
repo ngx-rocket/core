@@ -28,7 +28,7 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "ejs": "^2.6.1",
-    "ignore": "^5.0.2",
+    "ignore": "^5.0.4",
     "lodash": "^4.17.11",
     "node-dir": "^0.1.14",
     "yeoman-generator": "^3.1.1"
