@@ -340,7 +340,7 @@ Creates a new Yeoman generator extending the core ngx-rocket generator.
 - `toolsFilter`: file filter patterns to use when toolchain only option is enabled. If not provided, the generator
   will try to load the `.toolsignore` file inside `baseDir`.
 - `type`: generator type, can be `client`, `server` or `fullstack` (optional, default: 'client'). In `fullstack`
-  mode, client and server templates must be separated into `client` and `server` subfolders.
+  mode, client and server templates must be separated into `client`, `server` and `root` subfolders.
 
 #### `Generator.defaultPrefixRules`
 
