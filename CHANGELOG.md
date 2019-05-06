@@ -1,3 +1,7 @@
+# 4.1.0
+- Add root templates path for fullstack mode
+- Updated dependencies
+
 # 4.0.1
 - Fixed issue when matching action prefix
 
