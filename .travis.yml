@@ -5,8 +5,7 @@ branches:
 language: node_js
 node_js:
   - 'node'
-  - '7'
-  - '6'
+  - '8'
 
 matrix:
   fast_finish: true
