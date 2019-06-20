@@ -1,3 +1,6 @@
+# 5.0.1
+- Fix documentation regarding sharedProps and bump dependencies
+
 # 5.0.0
 - Updated to `yeoman-generator@4`
 
