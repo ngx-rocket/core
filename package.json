@@ -27,11 +27,11 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "ejs": "^2.6.1",
-    "ignore": "^5.1.1",
+    "ejs": "^2.6.2",
+    "ignore": "^5.1.2",
     "lodash": "^4.17.11",
     "node-dir": "^0.1.14",
-    "yeoman-generator": "^4.0.0"
+    "yeoman-generator": "^4.0.1"
   },
   "devDependencies": {
     "doctoc": "^1.4.0",

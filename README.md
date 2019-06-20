@@ -28,8 +28,10 @@
     - [`Generator.make(options)`](#generatormakeoptions)
     - [`Generator.defaultPrefixRules`](#generatordefaultprefixrules)
     - [`Generator.sharedProps`](#generatorsharedprops)
+    - [`Generator.shareProps(props)`](#generatorsharepropsprops)
   - [Instance properties](#instance-properties)
-    - [`sharedProps`](#sharedprops)
+    - [`sharedProps` (read-only)](#sharedprops-read-only)
+    - [`shareProps(props)`](#sharepropsprops)
     - [`isStandalone` (read-only)](#isstandalone-read-only)
     - [`isFullstack` (read-only)](#isfullstack-read-only)
     - [`packageManager` (read-only)](#packagemanager-read-only)
@@ -103,7 +105,7 @@ After the user has answered your prompts, the results will be exposed as propert
 The `props` object can then be used directly in your [templates](#templates).
 
 To avoid repeating the same questions between core and add-ons generators, these `props` can be shared and retrieved
-using [`Generator.sharedProps`](#generatorsharedprops).
+using [`Generator.shareProps`](#generatorshareprops) and [`Generator.sharedProps`](#generatorsharedprops).
 Note that in that goal, prompts name matching already defined properties with be automatically skipped once defined.
 
 ### Templates
@@ -373,16 +375,27 @@ const extentedRules = Object.assign(Generator.defaultPrefixRules, {
 
 #### `Generator.sharedProps`
 
-Gets a copy of properties shared between generators or sets additional shared properties.
+Gets a copy of properties shared between generators.
+To share additional properties, use [`Generator.shareProps`](#generatorshareprops).
+
+Also available on the generator instance.
+
+#### `Generator.shareProps(props)`
+
+Sets additional properties shared between generators.
 To avoid collisions issues, only properties that are currently undefined will be added.
 
 Also available on the generator instance.
 
 ### Instance properties
 
-#### `sharedProps`
+#### `sharedProps` (read-only)
 
 See [`Generator.sharedProps`](#generatorsharedprops).
+
+#### `shareProps(props)`
+
+See [`Generator.shareProps`](#generatorshareprops).
 
 #### `isStandalone` (read-only)
 
