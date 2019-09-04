@@ -6,8 +6,8 @@
   "main": "lib",
   "scripts": {
     "lint": "xo",
+    "lint:fix": "xo --fix",
     "test": "npm run lint -s && jest",
-    "fix": "xo --fix",
     "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags",
     "toc": "doctoc README.md --title '## Table of Contents' --maxlevel 4"
   },
@@ -19,7 +19,10 @@
     "yeoman",
     "add-on"
   ],
-  "author": "Yohan Lasorsa",
+  "author":{
+    "name": "Yohan Lasorsa",
+    "url": "https://twitter.com/sinedied"
+  },
   "license": "MIT",
   "homepage": "https://github.com/ngx-rocket/core",
   "bugs": {
@@ -27,15 +30,15 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "ejs": "^2.6.2",
-    "ignore": "^5.1.2",
-    "lodash": "^4.17.11",
+    "ejs": "^2.7.1",
+    "ignore": "^5.1.4",
+    "lodash": "^4.17.15",
     "node-dir": "^0.1.14",
-    "yeoman-generator": "^4.0.1"
+    "yeoman-generator": "^4.0.2"
   },
   "devDependencies": {
     "doctoc": "^1.4.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "xo": "^0.24.0"
   },
   "engines": {
