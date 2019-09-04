@@ -1,3 +1,7 @@
+
+# 5.0.2
+- Display error message when automate json fails to load
+
 # 5.0.1
 - Fix documentation regarding sharedProps and bump dependencies
 
