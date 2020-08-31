@@ -1,3 +1,9 @@
+# 6.0.0
+- Fix double prompt issue (#25)
+- Update dependencies
+
+### Breaking change
+- Now requires Node.js >= 10 (dropped Node.js 8 support)
 
 # 5.0.2
 - Display error message when automate json fails to load

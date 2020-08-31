@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rocket/core",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": "Core generator for creating ngX-Rocket add-ons",
   "repository": "ngx-rocket/core",
   "main": "lib",
