@@ -1,8 +1,0 @@
-.idea/
-test/
-.gitignore
-.npmignore
-.travis.yml
-jasmine.json
-*.spec.js
-npm-debug.log
