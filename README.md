@@ -410,7 +410,3 @@ in client only mode.
 Returns the package manager to use (either `npm` or `yarn`).
 The default value is `npm`, and can be changed either by the `--packageManager` option or the environment variable
 `NGX_PACKAGE_MANAGER`.
-
-# License
-
-[MIT](LICENSE)
