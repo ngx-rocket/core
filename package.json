@@ -51,7 +51,10 @@
     "envs": [
       "node",
       "jest"
-    ]
+    ],
+    "rules": {
+      "unicorn/prefer-default-parameters": "off"
+    }
   },
   "release": {
     "extends": "@jedmao/semantic-release-npm-github-config",
