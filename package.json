@@ -8,8 +8,8 @@
     "lint": "xo",
     "lint:fix": "xo --fix",
     "test": "npm run lint -s && jest",
-    "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags",
-    "toc": "doctoc README.md --title '## Table of Contents' --maxlevel 4"
+    "toc": "doctoc README.md --title '## Table of Contents' --maxlevel 4",
+    "release:check": "semantic-release --dry-run"
   },
   "keywords": [
     "ngx",
@@ -39,6 +39,7 @@
   "devDependencies": {
     "doctoc": "^2.0.0",
     "jest": "^26.6.3",
+    "semantic-release": "^17.3.1",
     "xo": "^0.37.1"
   },
   "engines": {
@@ -51,5 +52,10 @@
       "node",
       "jest"
     ]
+  },
+  "release": {
+    "extends": "@jedmao/semantic-release-npm-github-config",
+    "tagFormat": "${version}",
+    "branch": "master"
   }
 }
