@@ -1,7 +1,7 @@
 # :rocket: ngx-rocket/core
 
 [![NPM version](https://img.shields.io/npm/v/@ngx-rocket/core.svg)](https://www.npmjs.com/package/@ngx-rocket/core)
-[![Build Status](https://github.com/@ngx-rocket/core/workflows/build/badge.svg)](https://github.com/@ngx-rocket/core/actions)
+[![Build Status](https://github.com/ngx-rocket/core/workflows/build/badge.svg)](https://github.com/ngx-rocket/core/actions)
 ![Node version](https://img.shields.io/badge/node-%3E%3D8.0.0-brightgreen.svg)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
