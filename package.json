@@ -60,5 +60,9 @@
     "extends": "@jedmao/semantic-release-npm-github-config",
     "tagFormat": "${version}",
     "branch": "master"
-  }
+  },
+  "files": [
+    "lib/*.js",
+    "!lib/*.spec.js"
+  ]
 }
