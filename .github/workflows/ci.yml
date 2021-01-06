@@ -25,4 +25,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: echo Build OK!
+      - name: Check build matrix status
+        if: ${{ needs.build.result != 'success' }}
+        run: exit 1
