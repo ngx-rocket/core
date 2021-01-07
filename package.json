@@ -58,7 +58,8 @@
     }
   },
   "release": {
-    "extends": "semantic-release-npm-github"
+    "extends": "semantic-release-npm-github",
+    "branches": ["main"]
   },
   "files": [
     "lib/*.js",
