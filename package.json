@@ -1,6 +1,6 @@
 {
   "name": "@ngx-rocket/core",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Core generator for creating ngX-Rocket add-ons",
   "repository": "ngx-rocket/core",
   "main": "lib",
@@ -59,7 +59,9 @@
   },
   "release": {
     "extends": "semantic-release-npm-github",
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "files": [
     "lib/*.js",

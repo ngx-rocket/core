@@ -1,3 +1,5 @@
+## [6.0.1](https://github.com/ngx-rocket/core/compare/6.0.0...6.0.1) (2021-01-07)
+
 # 6.0.0
 - Fix double prompt issue (#25)
 - Update dependencies
