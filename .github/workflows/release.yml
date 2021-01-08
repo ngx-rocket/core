@@ -10,6 +10,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - uses: actions/setup-node@v1
       with:
         node-version: 14
@@ -22,5 +24,8 @@ jobs:
     - run: npx semantic-release
       if: success()
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # Need owner/admin account to bypass branch protection
+        GIT_COMMITTER_NAME: ci-rebot
+        GIT_COMMITTER_EMAIL: cirebot.github@gmail.com
