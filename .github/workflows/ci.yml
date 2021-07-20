@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: ['10', '>=14']
+        node-version: ['12', '>=14']
 
     name: Node.js v${{ matrix.node-version }}
     runs-on: ubuntu-latest
