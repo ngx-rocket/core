@@ -1,3 +1,22 @@
+# [7.0.0](https://github.com/ngx-rocket/core/compare/6.0.1...7.0.0) (2021-07-20)
+
+
+### Bug Fixes
+
+* update deps ([008d8f3](https://github.com/ngx-rocket/core/commit/008d8f3b74b3051dbda7104c9e058f921b94bcff))
+
+
+### Features
+
+* provide features param to base constructor ([8bfe827](https://github.com/ngx-rocket/core/commit/8bfe827af92f3b2e4c97b485eb67808b89a615f8))
+* restore install actions ([69bf709](https://github.com/ngx-rocket/core/commit/69bf709ab944b2290d8ad1d94b4d8db552491166))
+* update to yeoman-generator@5 ([0af0fe0](https://github.com/ngx-rocket/core/commit/0af0fe090f32c59b496b9ba36b2b88d978e102f3))
+
+
+### BREAKING CHANGES
+
+* update to yeoman-generator@5
+
 ## [6.0.1](https://github.com/ngx-rocket/core/compare/6.0.0...6.0.1) (2021-01-07)
 
 # 6.0.0
