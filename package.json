@@ -38,10 +38,10 @@
   },
   "devDependencies": {
     "doctoc": "^2.0.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.6",
     "semantic-release": "^17.3.1",
     "semantic-release-npm-github": "^1.0.2",
-    "xo": "^0.37.1"
+    "xo": "^0.42.0"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -54,7 +54,10 @@
       "jest"
     ],
     "rules": {
-      "unicorn/prefer-default-parameters": "off"
+      "unicorn/prefer-default-parameters": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/no-array-for-each": "off",
+      "unicorn/prefer-spread": "off"
     }
   },
   "release": {
