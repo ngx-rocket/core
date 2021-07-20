@@ -1,3 +1,16 @@
+# [6.1.0](https://github.com/ngx-rocket/core/compare/6.0.1...6.1.0) (2021-07-20)
+
+
+### Bug Fixes
+
+* update deps ([008d8f3](https://github.com/ngx-rocket/core/commit/008d8f3b74b3051dbda7104c9e058f921b94bcff))
+
+
+### Features
+
+* provide features param to base constructor ([1a180f6](https://github.com/ngx-rocket/core/commit/1a180f62bf158e67280de536de1c1bc0e85493de))
+* restore install actions ([5ad22b0](https://github.com/ngx-rocket/core/commit/5ad22b0c5d42b3704397b81b2a09446ddc235b0a))
+
 ## [6.0.1](https://github.com/ngx-rocket/core/compare/6.0.0...6.0.1) (2021-01-07)
 
 # 6.0.0
