@@ -1,3 +1,10 @@
+## [7.0.1](https://github.com/ngx-rocket/core/compare/7.0.0...7.0.1) (2021-07-21)
+
+
+### Bug Fixes
+
+* raw action files copy ([27e6f1e](https://github.com/ngx-rocket/core/commit/27e6f1ea7dba437bd782f7c632af6ecbe4f001ba))
+
 # [7.0.0](https://github.com/ngx-rocket/core/compare/6.0.1...7.0.0) (2021-07-20)
 
 
