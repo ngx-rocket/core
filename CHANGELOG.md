@@ -1,3 +1,5 @@
+## [7.0.2](https://github.com/ngx-rocket/core/compare/7.0.1...7.0.2) (2021-11-30)
+
 ## [7.0.1](https://github.com/ngx-rocket/core/compare/7.0.0...7.0.1) (2021-07-21)
 
 
