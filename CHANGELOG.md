@@ -1,3 +1,10 @@
+## [7.0.3](https://github.com/ngx-rocket/core/compare/7.0.2...7.0.3) (2021-12-01)
+
+
+### Bug Fixes
+
+* wrong process module import ([bef7e4d](https://github.com/ngx-rocket/core/commit/bef7e4d387138278ca7529e1ff928445aaf06cde))
+
 ## [7.0.2](https://github.com/ngx-rocket/core/compare/7.0.1...7.0.2) (2021-11-30)
 
 ## [7.0.1](https://github.com/ngx-rocket/core/compare/7.0.0...7.0.1) (2021-07-21)
