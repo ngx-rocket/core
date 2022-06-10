@@ -39,7 +39,7 @@
   "devDependencies": {
     "doctoc": "^2.0.0",
     "jest": "^27.0.6",
-    "semantic-release": "^18.0.1",
+    "semantic-release": "^19.0.3",
     "semantic-release-npm-github": "^2.0.0",
     "xo": "^0.47.0"
   },
