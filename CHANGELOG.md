@@ -1,3 +1,15 @@
+## [7.0.5](https://github.com/ngx-rocket/core/compare/7.0.4...7.0.5) (2022-11-28)
+
+
+### chore
+
+* update min node version ([e18a28a](https://github.com/ngx-rocket/core/commit/e18a28a3cd6d8338d968c07a53680bcd7919679e))
+
+
+### BREAKING CHANGES
+
+* Minimum supported Node.js version is now >=14
+
 ## [7.0.4](https://github.com/ngx-rocket/core/compare/7.0.3...7.0.4) (2022-08-24)
 
 ## [7.0.3](https://github.com/ngx-rocket/core/compare/7.0.2...7.0.3) (2021-12-01)
