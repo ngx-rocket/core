@@ -11,13 +11,13 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: ['12', '>=14']
+        node-version: ['14', '>=18']
 
     name: Node.js v${{ matrix.node-version }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
